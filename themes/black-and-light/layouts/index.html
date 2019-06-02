@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+
+<section id=content>
+    {{ partial "small_bio.html" . }}
+  <h2 class="dividing_title">Recent Articles</h2>
+  <ul class=posts_listing>
+    {{ range first 3 (where .Pages "Params.type" "!=" "standalone") }}
+      <li>
+        <a class="article_list" href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+
+{{ partial "footer.html" . }}
+

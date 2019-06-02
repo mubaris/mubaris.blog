@@ -1,0 +1,21 @@
+baseurl = "https://mubaris.blog/"
+title = "Mubaris NK"
+author = "Mubaris NK"
+canonifyurls = true
+languagecode = "en"
+theme = "black-and-light"
+
+pygmentsstyle       = "bw"
+pygmentscodefences  = true
+
+[params]
+  sitename = "Mubaris NK"
+  disableWebFonts = false
+
+[[menu.main]]
+    name = "About"
+    url  = "/about"
+
+[[menu.main]]
+    name = "Articles"
+    url  = "/blog"
