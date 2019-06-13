@@ -3,6 +3,7 @@ title: "How I Consume Books"
 date: 2019-06-12T19:30:12+05:30
 draft: false
 url: book-reading
+cover: https://mubaris.blog/book-reading-cover.jpg
 ---
 
 Books are one of the important sources of my knowledge. They help me become a better version of myself. Over the years the way I *consume* the books has changed a lot. A book is a gateway to knowledge. My aim is to acquire that knowledge, and hopefully use it in my life. That's how books help me. Acquiring knowledge from a book is a long process. It doesn't end when you finish reading it.

@@ -35,6 +35,26 @@
     {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mubarisQ">
+    <meta name="twitter:creator" content="@mubarisQ">
+    {{ if .Params.heading }}
+      <meta name="twitter:title" content="{{ .Params.heading }}">
+    {{ else }}
+      <meta name="twitter:title" content="{{ .Site.Title }}">
+    {{ end }}
+    {{ if .Params.description }}
+      <meta name="twitter:description" content="{{ .Params.description }}">
+    {{ else }}
+      <meta name="twitter:description" content="{{ .Summary }}">
+    {{ end }}
+
+    {{ if .Params.cover }}
+      <meta name="twitter:image" content="{{ .Params.cover }}">
+    {{ else }}
+      <meta name="twitter:image" content="https://mubaris.blog/cover.jpg">
+    {{ end }}
   </head>
 
   <body>
