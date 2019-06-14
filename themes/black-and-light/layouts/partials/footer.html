@@ -1,3 +1,8 @@
   {{ template "_internal/google_analytics_async.html" . }}
+  {{ if eq hugo.Environment "production" }}
+    <object data="/dot.jpeg" type="image/jpeg">
+      <img src="https://open.mubaris.blog/api/image?path={{ .Permalink }}" alt="">
+    </object>
+  {{ end }}
 </body>
 </html>
